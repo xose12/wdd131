@@ -62,26 +62,27 @@ main {
 .card {
     background-color: #c09999;
     padding: 20px;
-    border-radius: 10px; /* Adjust the border radius as needed */
+    border-radius: 10px;
+    margin: 10px;
     position: relative;
-    margin: 10px; /* Add margin to align with the border */
+    overflow: hidden;
 }
 
 .card img.profile-image {
-    display: block;
+    float: right;
     width: 150px; /* Adjust size as needed */
     height: 150px; /* Adjust size as needed */
-    border-radius: 50%; /* Make it circular */
-    margin: 0 auto 20px; /* Center and add bottom margin */
-    object-fit: cover; /* Maintain aspect ratio */
-    object-position: center; /* Center the image */
+    border-radius: 50%;
+    margin-left: 20px; /* Space between text and image */
+    object-fit: cover;
+    object-position: center;
 }
 
 .card h2 {
-    background-color: #2cbeb7; /* Unique color for the h2 line */
-    color: rgb(54, 45, 45); /* Text color */
-    padding: 10px; /* Padding for better visibility */
-    margin-top: -20px; /* Adjust to align with the content */
+    background-color: #2cbeb7;
+    color: rgb(54, 45, 45);
+    padding: 10px;
+    margin-top: -20px;
 }
 
 footer {
