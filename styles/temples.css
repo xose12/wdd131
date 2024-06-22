@@ -5,7 +5,7 @@
 }
 
 header {
-    background-color: #390364;
+    background-color: #174c8e;
     color: white;
     text-align: center;
 }
@@ -51,14 +51,14 @@ nav.show a {
 
 nav.show a:hover {
     background-color: grey;
-    color: #390364;
+    color: #2752a8;
 }
 
 main h1 {
     padding-top: 16px;
     text-align: center;
     font-size: 34px;
-    color: #390364;
+    color: #3b4592;
 }
 
 .temples-grid {
@@ -78,7 +78,7 @@ figcaption {
 
 footer {
     padding: 10px;
-    background-color: #390364;
+    background-color: #4772ad;
     color: white;
     text-align: center;
 }
