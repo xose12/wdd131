@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background-color: #390364;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    display: inline-flex;
+    padding-right: 2rem;
+}
+
+#menu {
+    display: inline-flex;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    color: #fff;
+    align-self: center;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    content: "✖";
+}
+
+nav {
+    display: none;
+}
+
+nav.show {
+    display: block;
+}
+
+nav.show a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+}
+
+nav.show a:hover {
+    background-color: grey;
+    color: #390364;
+}
+
+main h1 {
+    padding-top: 16px;
+    text-align: center;
+    font-size: 34px;
+    color: #390364;
+}
+
+.temples-grid {
+    display: block;
+    padding: 16px;
+}
+
+.temple-image img {
+    padding: 16px;
+    width: 90%;
+    border-radius: 26px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    padding: 10px;
+    background-color: #390364;
+    color: white;
+    text-align: center;
+}
+
+#lastModified {
+    color: #FDFE4C;
+    font-size: 12px;
+}
