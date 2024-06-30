@@ -1,0 +1,50 @@
+body {
+    font-family: 'Roboto', helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* Fix padding issues on .callout */
+.callout {
+    color: #fff; /* Improve text contrast */
+    background-color: #702963;
+    padding: 20px; /* Adjust padding for better spacing */
+}
+
+/* Fix h2 alignment to left */
+h2 {
+    color: navy;
+    text-align: left; /* Align h2 to the left */
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    gap: 20px; /* Adjust gap between columns */
+}
+
+/* Spanning h2 across two columns */
+main h2 {
+    grid-column: 1 / -1; /* Span across all columns */
+    text-align: center; /* Center-align h2 within the grid */
+}
+
+/* Replace marquee with banner */
+.banner {
+    padding: 1rem;
+    background-color: #eee;
+    text-align: center;
+}
+
+/* Move footer content to the left */
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: smaller;
+    text-align: left; /* Align footer content to the left */
+}

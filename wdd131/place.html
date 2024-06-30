@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Timothy Karikari">
+    <meta name="description"
+        content="WDD 131 - Web Fundamentals - Timothy Karikari. Web page demostrating what I have learned from the week activities, having responsive images and functions.">
+    <title>Accra - Ghana</title>
+    <!--Link to styles-->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <!--Link to scripts-->
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+    <!--Link to fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="title-container">
+            <h1>Accra - Ghana</h1>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-ut-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-ut-medium.webp" media="(min-width: 500px)">
+                <img src="images/ghana.webp" alt="Utah landscape" width="500" height="600">
+            </picture>
+            <section class="first">
+                <div class="data-header">
+                    <h2>Data</h2>
+                </div>
+                <dl class="data-list">
+                    <dt>Area:</dt>
+                    <dd id="area"></dd>
+                    <dt>Population</dt>
+                    <dd id="population"></dd>
+                    <dt>Capital:</dt>
+                    <dd id="capital"></dd>
+                    <dt>Language(s):</dt>
+                    <dd id="languages">Twi, English</dd>
+                    <dt>Currency:</dt>
+                    <dd id="currency">cedis</dd>
+                    <dt>Time Zone:</dt>
+                    <dd id="timeZone">GMT</dd>
+                    <dt>Calling Code:</dt>
+                    <dd id="callingCode">+233</dd>
+                    <dt>Internet TLD:</dt>
+                    <dd id="internetTLD">.gh</dd>
+                </dl>
+            </section>
+            <section class="second">
+                <div class="weather-header">
+                    <h2>Weather</h2>
+                    <img src="images/weather-icon.svg" alt="Weather Icon">
+                </div>
+                <dl class="data-list">
+                    <dt>Temperature:</dt>
+                    <dd id="temperature"></dd>
+                    <dt>Conditions:</dt>
+                    <dd id="conditions"></dd>
+                    <dt>Wind:</dt>
+                    <dd id="windSpeed"></dd>
+                    <dt>Wind Chill:</dt>
+                    <dd id="windChill"></dd>
+                </dl>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>
+                ©<span id="currentyear">2024</span> | 💖 Timothy Karikari 💖 | Ghana
+
+            </p>
+            <p id="lastModified">
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
