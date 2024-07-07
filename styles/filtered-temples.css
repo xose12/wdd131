@@ -1,0 +1,169 @@
+:root {
+    --primary-color: #006d77;
+    --secondary-color: #e29578;
+    --accent1-color: #83c5be;
+    --accent2-color: #ffddd2;
+    --subtle-color: #edf6f9;
+    --primary-trans-color: rgba(0, 109, 119, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1333px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding-top: 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+header h1 {
+    color: #fff;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 1.4rem;
+}
+
+.navigation {
+    position: relative;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: var(--accent1-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    position: absolute;
+    top: 22px;
+    right: 0;
+    width: 150px;
+}
+
+.navigation li {
+    display: none;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.navigation a {
+    text-decoration: none;
+    padding: 0.88rem;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.navigation a:hover {
+    background-color: var(--subtle-color);
+    color: #000;
+}
+
+.open li {
+    display: block;
+}
+
+.active {
+    background-color: var(--primary-trans-color);
+    color: #fff;
+}
+
+header a {
+    color: #000;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 0.25rem;
+    right: 0.5rem;
+}
+
+#menu::before {
+    color: #fff;
+    content: "☰";
+    padding: 5px;
+}
+
+#menu.open::before {
+    content: "❎";
+    border: none;
+    padding: 0;
+}
+
+main h2 {
+    margin: 0;
+    padding: 0.75rem;
+    text-align: center;
+    background-color: var(--accent1-color);
+}
+
+.temple-listings {
+    margin: 1rem 1rem 0 1rem;
+}
+
+.temple-card {
+    background-color: var(--subtle-color);
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.temple-card h3 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.temple-card img {
+    margin-top: 1rem;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    box-shadow: 3px 3px 10px #000;
+    border-radius: 8px;
+}
+
+.temple-detail {
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.detail-label {
+    font-variant: small-caps;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    margin-top: 1em;
+    padding: 1px;
+}
+
+footer p {
+    margin: 0.5em;
+    color: #fff;
+}

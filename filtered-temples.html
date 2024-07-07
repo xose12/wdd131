@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WDD 131 - Temple Album - Timothy G. Karikari</title>
+    <meta name="description" content="WDD 131 | Timothy G. Karikari| Temple Album">
+    <meta name="author" content="Timothy G. Karikari">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple&nbsp;Album</h1>
+        <button id="menu" title="menu"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a id="home" href="#HOME" class="active">Home</a></li>
+                <li><a id="old" href="#OLD">Old</a></li>
+                <li><a id="new" href="#NEW">New</a></li>
+                <li><a id="large" href="#LARGE">Large</a></li>
+                <li><a id="small" href="#SMALL">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="filter-indicator">Home</h2>
+        <div class="temple-listings"></div>
+    </main>
+    <footer>
+        <p>&copy;<span id="current-year"></span> | Timothy Karikari | Ghana</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>
