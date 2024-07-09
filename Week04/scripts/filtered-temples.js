@@ -79,6 +79,13 @@ const temples = [
     imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/columbia-south-carolina/400x250/columbia-temple-768161-wallpaper.jpg",
   },
+  {   templeName: "Accra, Ghana",
+    location: "Greater Accra, Ghana",
+    dedicated: "2004, January, 11",
+    area: 20560,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/800x450/accra-ghana-temple-detail-249022-2400x1200.jpg",
+ },
   // Add more temple objects here...
 ];
 
