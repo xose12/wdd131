@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Review</title>
+    <link rel="stylesheet" href="/styles/form.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Review</h1>
+    </header>
+    <main class="main__container">
+      <form method="get" action="review.html">
+        <label for="product">Product Name:</label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Select a Product...</option>
+        </select>
+
+        <label for="rating">Overall Rating:</label>
+        <div id="rating">
+          <input type="radio" id="star1" name="rating" value="1" required />
+          <label for="star1">&star;</label>
+          <input type="radio" id="star2" name="rating" value="2" required />
+          <label for="star2">&star; &star;</label>
+          <input type="radio" id="star3" name="rating" value="3" required />
+          <label for="star3">&star; &star; &star;</label>
+          <input type="radio" id="star4" name="rating" value="4" required />
+          <label for="star4">&star; &star; &star; &star;</label>
+          <input type="radio" id="star5" name="rating" value="5" required />
+          <label for="star5">&star; &star; &star; &star; &star;</label>
+        </div>
+
+        <label for="date">Date of Installation:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="features"
+          >Which of these feature did you find useful in the product?<br />
+          (Check all that apply)</label
+        >
+        <div id="features">
+          <div>
+            <input
+              type="checkbox"
+              id="feature1"
+              name="features"
+              value="Feature 1"
+            />
+            <label for="feature1">Durability</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="feature2"
+              name="features"
+              value="Feature 2"
+            />
+            <label for="feature2">Ease of Use</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="feature2"
+              name="features"
+              value="Feature 2"
+            />
+            <label for="feature2">Performance</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="feature2"
+              name="features"
+              value="Feature 2"
+            />
+            <label for="feature2">Design</label>
+          </div>
+        </div>
+
+        <label for="review">Written Review(<span>Optional</span>)</label>
+        <textarea rows="6" id="review" name="review"></textarea>
+
+        <label for="username">User Name(<span>Optional</span>)</label>
+        <input type="text" id="username" name="username" />
+
+        <input type="submit" value="Post Review" />
+      </form>
+    </main>
+    <footer>
+      <p>
+        &copy;<span id="currentyear">❤2024</span> Timothy Karikari ❤ Accra Ghana
+      </p>
+      <p id="lastModified">Last Modification:07/13/2024 5:47:47</p>
+    </footer>
+    <script src="/scripts/form.js"></script>
+  </body>
+</html>
