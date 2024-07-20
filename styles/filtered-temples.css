@@ -1,10 +1,10 @@
 :root {
     --primary-color: #08386e; /* Dark Blue */
     --secondary-color: #c06c4d; /* Warm Brown */
-    --accent1-color: #07534c; /* Teal Green */
+    --accent1-color: #70bdb5; /* Teal Green */
     --accent2-color: #ffddd2; /* Light Cream */
     --subtle-color: #edf6f9; /* Very Light Blue */
-    --primary-trans-color: rgba(0, 109, 119, 0.8); /* Semi-Transparent Teal */
+    --primary-trans-color: rgba(124, 190, 196, 0.8); /* Semi-Transparent Teal */
 }
 
 * {
