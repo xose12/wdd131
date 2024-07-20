@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #08386e;
-    --secondary-color: #c06c4d;
-    --accent1-color: #07534c;
-    --accent2-color: #ffddd2;
-    --subtle-color: #edf6f9;
-    --primary-trans-color: rgba(0, 109, 119, 0.8);
+    --primary-color: #08386e; /* Dark Blue */
+    --secondary-color: #c06c4d; /* Warm Brown */
+    --accent1-color: #07534c; /* Teal Green */
+    --accent2-color: #ffddd2; /* Light Cream */
+    --subtle-color: #edf6f9; /* Very Light Blue */
+    --primary-trans-color: rgba(0, 109, 119, 0.8); /* Semi-Transparent Teal */
 }
 
 * {
@@ -17,13 +17,14 @@ body {
     max-width: 1333px;
     margin: auto;
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--subtle-color);
 }
 
 header {
     text-align: center;
     width: 100%;
     background-color: var(--primary-color);
-    padding-top: 1px;
+    padding: 1rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -31,10 +32,6 @@ header {
 
 header h1 {
     color: #fff;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
     font-size: 1.4rem;
 }
 
@@ -49,7 +46,6 @@ header h1 {
     background-color: var(--accent1-color);
     display: flex;
     flex-direction: column;
-    justify-content: unset;
     position: absolute;
     top: 22px;
     right: 0;
@@ -57,7 +53,6 @@ header h1 {
 }
 
 .navigation li {
-    display: none;
     border-bottom: 1px solid var(--primary-color);
 }
 
@@ -67,10 +62,11 @@ header h1 {
     display: block;
     text-align: center;
     font-size: 1.2rem;
+    color: #000; /* Black text for links */
 }
 
 .navigation a:hover {
-    background-color: var(--subtle-color);
+    background-color: var(--accent2-color); /* Light Cream */
     color: #000;
 }
 
@@ -81,10 +77,6 @@ header h1 {
 .active {
     background-color: var(--primary-trans-color);
     color: #fff;
-}
-
-header a {
-    color: #000;
 }
 
 #menu {
@@ -105,7 +97,6 @@ header a {
 
 #menu.open::before {
     content: "❎";
-    border: none;
     padding: 0;
 }
 
@@ -114,14 +105,15 @@ main h2 {
     padding: 0.75rem;
     text-align: center;
     background-color: var(--accent1-color);
+    color: #000; /* Ensure good contrast */
 }
 
 .temple-listings {
-    margin: 1rem 1rem 0 1rem;
+    margin: 1rem;
 }
 
 .temple-card {
-    background-color: var(--subtle-color);
+    background-color: var(--accent2-color); /* Light Cream */
     padding: 1rem;
     border: 1px solid #ddd;
     text-align: center;
@@ -130,11 +122,12 @@ main h2 {
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    color: #333; /* Dark text for readability */
 }
 
 .temple-card h3 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 0;
+    color: #000; /* Black text for headers */
 }
 
 .temple-card img {
@@ -158,32 +151,15 @@ main h2 {
 footer {
     width: 100%;
     text-align: center;
-    background-color: #485d9c;
+    background-color: #485d9c; /* Dark Blue */
     margin-top: 1em;
-    padding: 1px;
-}
-
-footer p {
-    margin: 0.5em;
-    color: #fff;
+    padding: 1rem;
+    color: #fff; /* White text for footer */
 }
 
 @media (min-width: 44.7rem) {
     header h1 {
-        color: #fff;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
         font-size: 1.8rem;
-    }
-    main h2 {
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
-    main h2 {
-        display: none;
-    }
-    #menu {
-        display: none;
     }
     .navigation {
         position: unset;
@@ -199,14 +175,12 @@ footer p {
     }
     .navigation li {
         border-bottom: none;
-        width: 100%;
-        display: block;
+        width: auto;
     }
     .temple-listings {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem;
-        margin: 1rem 0 0 0;
     }
     .temple-card {
         margin-bottom: 0;

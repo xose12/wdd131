@@ -1,48 +1,41 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WDD 131 - Temple Album - Timothy G. Karikari</title>
-    <meta
-      name="description"
-      content="WDD 131 | Timothy G. Karikari| Temple Album"
-    />
+    <meta name="description" content="WDD 131 | Timothy G. Karikari | Temple Album" />
     <meta name="author" content="Timothy G. Karikari" />
     <link rel="stylesheet" href="styles/filtered-temples.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/filtered-temples.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/filtered-temples.js" defer></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <h1>Temple&nbsp;Album</h1>
-      <button id="menu" title="menu"></button>
-      <nav class="navigation">
-        <ul>
-          <li><a id="home" href="#HOME" class="active">Home</a></li>
-          <li><a id="old" href="#OLD">Old</a></li>
-          <li><a id="new" href="#NEW">New</a></li>
-          <li><a id="large" href="#LARGE">Large</a></li>
-          <li><a id="small" href="#SMALL">Small</a></li>
-        </ul>
-      </nav>
+        <h1>Temple Album</h1>
+        <button id="menu" title="menu"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a id="home" href="#home" class="active">Home</a></li>
+                <li><a id="old" href="#old">Old</a></li>
+                <li><a id="new" href="#new">New</a></li>
+                <li><a id="large" href="#large">Large</a></li>
+                <li><a id="small" href="#small">Small</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-      <h2 id="filter-indicator">Home</h2>
-      <div class="temple-listings"></div>
+        <h2 id="home">Home</h2>
+        <div class="temple-listings" id="temple-listings"></div>
     </main>
     <footer>
-      <p>&copy;<span id="currentyear">2024</span> Timothy Karikari &hearts; Accra, Ghana</p>
-      <p id="lastModified">Last Modified: <span></span></p>
+        <p>&copy; <span id="currentyear">2024</span> Timothy Karikari &hearts; Accra, Ghana</p>
+        <p id="lastModified">Last Modified: <span></span></p>
     </footer>
     <script src="scripts/script.js"></script>
-  </body>
+</body>
 </html>
