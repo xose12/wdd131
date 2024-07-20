@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review Count</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Review Submitted</h1>
+    </header>
+    <main class="main__container">
+        <p id="reviewCount">Processing...</p>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear">2024</span> Timothy Karikari &hearts; Accra, Ghana</p>
+        <p id="lastModified">Last Modified: <span></span></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Handle review counter
+            const reviewCount = localStorage.getItem("reviewCount") || 0;
+            localStorage.setItem("reviewCount", parseInt(reviewCount) + 1);
+            document.getElementById("reviewCount").textContent = `Reviews submitted: ${parseInt(reviewCount) + 1}`;
+        });
+    </script>
+</body>
+</html>

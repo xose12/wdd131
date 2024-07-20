@@ -17,23 +17,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const currentYear = document.querySelector("#currentyear");
 
-  // use the date object
+  // Use the date object
   const todaysDate = new Date();
   currentYear.innerHTML = `${todaysDate.getFullYear()}`;
 
-  //Last modified
-  document.getElementById("lastModified").innerHTML = new Date(
-    document.lastModified
-  );
+  // Last modified
+  document.getElementById("lastModified").innerHTML = `Last Modified: ${new Date(document.lastModified)}`;
 
-  lastModified.innerHTML = `Last Modified: ${new Date(document.lastModified)}`;
+  // Handle review counter on review.html
+  if (window.location.pathname.includes("review.html")) {
+    const reviewCount = localStorage.getItem("reviewCount") || 0;
+    localStorage.setItem("reviewCount", parseInt(reviewCount) + 1);
+    document.body.innerHTML += `<p>Reviews submitted: ${parseInt(reviewCount) + 1}</p>`;
+  }
 });
-
-// Increment review counter on review.html
-if (window.location.pathname.includes("review.html")) {
-  const reviewCount = localStorage.getItem("reviewCount") || 0;
-  localStorage.setItem("reviewCount", parseInt(reviewCount) + 1);
-  document.body.innerHTML += `<p>Reviews submitted: ${
-    parseInt(reviewCount) + 1
-  }</p>`;
-}
