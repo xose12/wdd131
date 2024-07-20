@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Review</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <header>
@@ -22,76 +22,51 @@
           <input type="radio" id="star1" name="rating" value="1" required />
           <label for="star1">&star;</label>
           <input type="radio" id="star2" name="rating" value="2" required />
-          <label for="star2">&star; &star;</label>
+          <label for="star2">&star;&star;</label>
           <input type="radio" id="star3" name="rating" value="3" required />
-          <label for="star3">&star; &star; &star;</label>
+          <label for="star3">&star;&star;&star;</label>
           <input type="radio" id="star4" name="rating" value="4" required />
-          <label for="star4">&star; &star; &star; &star;</label>
+          <label for="star4">&star;&star;&star;&star;</label>
           <input type="radio" id="star5" name="rating" value="5" required />
-          <label for="star5">&star; &star; &star; &star; &star;</label>
+          <label for="star5">&star;&star;&star;&star;&star;</label>
         </div>
 
         <label for="date">Date of Installation:</label>
         <input type="date" id="date" name="date" required />
 
-        <label for="features"
-          >Which of these feature did you find useful in the product?<br />
-          (Check all that apply)</label
-        >
+        <label for="features">Which of these features did you find useful?<br />(Check all that apply)</label>
         <div id="features">
           <div>
-            <input
-              type="checkbox"
-              id="feature1"
-              name="features"
-              value="Feature 1"
-            />
+            <input type="checkbox" id="feature1" name="features" value="Durability" />
             <label for="feature1">Durability</label>
           </div>
           <div>
-            <input
-              type="checkbox"
-              id="feature2"
-              name="features"
-              value="Feature 2"
-            />
+            <input type="checkbox" id="feature2" name="features" value="Ease of Use" />
             <label for="feature2">Ease of Use</label>
           </div>
           <div>
-            <input
-              type="checkbox"
-              id="feature2"
-              name="features"
-              value="Feature 2"
-            />
-            <label for="feature2">Performance</label>
+            <input type="checkbox" id="feature3" name="features" value="Performance" />
+            <label for="feature3">Performance</label>
           </div>
           <div>
-            <input
-              type="checkbox"
-              id="feature2"
-              name="features"
-              value="Feature 2"
-            />
-            <label for="feature2">Design</label>
+            <input type="checkbox" id="feature4" name="features" value="Design" />
+            <label for="feature4">Design</label>
           </div>
         </div>
 
-        <label for="review">Written Review(<span>Optional</span>)</label>
+        <label for="review">Written Review (<span>Optional</span>)</label>
         <textarea rows="6" id="review" name="review"></textarea>
 
-        <label for="username">User Name(<span>Optional</span>)</label>
+        <label for="username">User Name (<span>Optional</span>)</label>
         <input type="text" id="username" name="username" />
 
         <input type="submit" value="Post Review" />
       </form>
     </main>
     <footer>
-      <p>
-        &copy;<span id="currentyear">❤2024</span> Timothy Karikari ❤ Accra Ghana
-      </p>
-      <p id="lastModified">Last Modification:07/13/2024 5:47:47</p>
+      <p>&copy;<span id="currentyear">2024</span> Timothy Karikari &hearts; Accra, Ghana</p>
+      <p id="lastModified">Last Modified: <span></span></p>
     </footer>
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
