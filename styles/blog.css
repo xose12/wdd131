@@ -1,0 +1,28 @@
+.blog-header {
+    text-align: left;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    text-decoration: underline;
+  }
+  
+  .blog-articles {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .blog-article {
+    margin-bottom: 2rem;
+    padding: 0 2rem 0 2rem;
+  }
+  
+  .blog-articles h4 {
+    font-size: 1.3rem;
+  }
+  
+  .blog-articles p {
+    font-size: 0.8rem;
+  }
+  
